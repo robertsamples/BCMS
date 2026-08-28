@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>baconmilkshake — 3D printing tools and reference data</title>
+<meta name="description" content="Projects by Robert Samples: MeltCalc hotend flow-rate calculator, INDX-CAD reverse engineered Prusa INDX toolhead CAD, and a reference for 3D printer toolchanger topologies.">
+<link rel="canonical" href="https://baconmilkshake.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="baconmilkshake">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://baconmilkshake.com/">
+<meta property="og:title" content="baconmilkshake — 3D printing tools and reference data">
+<meta property="og:description" content="MeltCalc hotend flow-rate calculator, INDX-CAD reverse engineered Prusa INDX toolhead CAD, and a reference for 3D printer toolchanger topologies.">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5c5c5c;
+    --rule: #e2e2e2;
+    --link: #1a4fa0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --fg: #e8e8e8;
+      --muted: #a0a0a0;
+      --rule: #2e2e2e;
+      --link: #8ab4f8;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 4rem;
+  }
+  header { margin-bottom: 2.5rem; }
+  h1 { font-size: 1.5rem; margin: 0 0 .4rem; }
+  header p { margin: 0; color: var(--muted); }
+  h2 { font-size: 1.05rem; margin: 0 0 .3rem; }
+  h2 a { color: var(--link); text-decoration: none; }
+  h2 a:hover, h2 a:focus { text-decoration: underline; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li {
+    padding: 1.4rem 0;
+    border-top: 1px solid var(--rule);
+  }
+  li p { margin: 0 0 .5rem; }
+  .url {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .85rem;
+    color: var(--muted);
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .875rem;
+  }
+  footer a { color: var(--link); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>baconmilkshake</h1>
+    <p>3D printing tools and reference data by Robert Samples.</p>
+  </header>
+
+  <main>
+    <ul>
+      <li>
+        <h2><a href="https://meltcalc.baconmilkshake.com/">MeltCalc</a></h2>
+        <p>Compares 3D printer hotends by melt zone geometry: sustainable volumetric flow rate, residence time, melt energy, heater power and cost per mm³/s. Covers 90+ hotends and 36 filament materials from PLA to PEEK.</p>
+        <p class="url">meltcalc.baconmilkshake.com</p>
+      </li>
+      <li>
+        <h2><a href="https://indx-cad.baconmilkshake.com/">INDX-CAD</a></h2>
+        <p>Reverse engineered CAD of the Prusa INDX toolhead, including internal geometry and moving assemblies. Live 3D viewer plus STEP and Fusion 360 (.f3z) downloads under CC BY-SA 4.0.</p>
+        <p class="url">indx-cad.baconmilkshake.com</p>
+      </li>
+      <li>
+        <h2><a href="https://toolchangers.baconmilkshake.com/">Toolchanger Data</a></h2>
+        <p>A reference for 3D printer toolchanger topologies — conventional toolchangers, filament path changers and hotend changers — with diagrams, tradeoffs, and examples from commercial and open source machines.</p>
+        <p class="url">toolchangers.baconmilkshake.com</p>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>Source and other projects on <a href="https://github.com/robertsamples" rel="me">GitHub</a>.</p>
+  </footer>
+
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://baconmilkshake.com/#website",
+      "url": "https://baconmilkshake.com/",
+      "name": "baconmilkshake",
+      "description": "3D printing tools and reference data."
+    },
+    {
+      "@type": "ItemList",
+      "name": "Projects",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://meltcalc.baconmilkshake.com/",
+          "name": "MeltCalc",
+          "description": "Compare 3D printer hotends by melt zone length, sustainable volumetric flow rate, residence time, heater power and cost per mm³/s."
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://indx-cad.baconmilkshake.com/",
+          "name": "INDX-CAD",
+          "description": "Reverse engineered CAD of the Prusa INDX toolhead with full internal geometry, STEP and Fusion 360 downloads."
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://toolchangers.baconmilkshake.com/",
+          "name": "Toolchanger Data",
+          "description": "A reference for 3D printer toolchanger topologies."
+        }
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>
